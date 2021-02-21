@@ -6,6 +6,7 @@ import 'package:stacked_services/stacked_services.dart';
 import 'app/router.gr.dart' as router;
 
 void main() {
+  setupLocator();
   runApp(MyApp());
 }
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'MobileAppSample',
       theme: ThemeData(
-        primaryColor: Colors.black54,
+        primaryColor: Colors.black,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomeView(),
